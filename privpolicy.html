@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MaxContact Siren – Privacy Policy</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    body { margin: 0; background: #fafafa; color: #1f2937; }
+    .wrap { max-width: 840px; margin: 0 auto; padding: 48px 20px; }
+    h1 { font-size: 2rem; margin: 0 0 0.5rem; }
+    .muted { color: #6b7280; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    ul { line-height: 1.6; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; }
+    footer { margin-top: 32px; font-size: 0.9rem; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>MaxContact Siren – Privacy Policy</h1>
+      <p class="muted">Last updated: <strong>[DATE]</strong></p>
+    </header>
+
+    <section class="card">
+      <p><strong>MaxContact Siren</strong> is a Chrome extension for Medmark employees that plays an audible alert when an incoming call is detected on the MaxContact dashboard (<code>medmark.maxcontact.com</code>).</p>
+
+      <h2>Data We Access</h2>
+      <ul>
+        <li><strong>Microphone:</strong> Requested only when you choose to test or configure audio devices. No audio is recorded or transmitted.</li>
+        <li><strong>Audio Device Information:</strong> We read available audio input/output devices so you can select one for alerts.</li>
+        <li><strong>Local Storage:</strong> We save your selected audio output device (and related settings) locally in Chrome via the <code>chrome.storage</code> API.</li>
+      </ul>
+
+      <h2>Data We Do Not Collect</h2>
+      <ul>
+        <li>No personal data or call content is sent off your device.</li>
+        <li>No analytics, tracking, advertising, or profiling.</li>
+        <li>No sale or sharing of data with third parties.</li>
+      </ul>
+
+      <h2>Use of Permissions</h2>
+      <ul>
+        <li><strong>Host permissions</strong> for <code>https://medmark.maxcontact.com/*</code> allow the extension to detect the incoming-call modal to trigger alerts.</li>
+        <li><strong>Microphone</strong> prompts occur only when you initiate device testing/configuration using standard browser APIs.</li>
+      </ul>
+
+      <h2>Data Retention & Control</h2>
+      <ul>
+        <li>Settings stored via <code>chrome.storage</code> remain on your device and can be cleared by resetting the extension’s settings or removing the extension.</li>
+      </ul>
+
+      <h2>Children’s Privacy</h2>
+      <p>This extension is intended for Medmark employees and is not directed to children.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy as the extension evolves. Material changes will update the “Last updated” date above.</p>
+
+      <h2>Contact</h2>
+      <p>Questions? Email <a href="mailto:conor.moran@medmark.ie">conor.moran@medmark.ie</a>.</p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Medmark. All rights reserved.
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
